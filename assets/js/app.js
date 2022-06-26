@@ -31,7 +31,16 @@ function buildTable(data){
 //clear input from form after "filter table" button has been hit 
 const clearInput = () => {
   const dateInputVal = document.getElementById('datetime');
+  const cityInputVal = document.getElementById('city');
+  const stateInputVal = document.getElementById('state');
+  const countryInputVal = document.getElementById('country');
+  const shapeInputVal = document.getElementById('shape');
+
   dateInputVal.value = '';
+  cityInputVal.value = '';
+  stateInputVal.value = '';
+  countryInputVal.value = '';
+  shapeInputVal.value = '';
 }
 
 
@@ -82,12 +91,17 @@ function filterTable(obj){
   buildTable(filteredData);
 
 //clear form 
-  clearInput();
+  // clearInput();
 
 }
 
 // 2. Attach an event to listen for changes to each filter
 d3.selectAll("input").on("change", updateFilters);
+
+// //reset
+// const reset = () => {
+//   clearInput()
+// }
 
 
 // Build the table when the page loads
