@@ -1,14 +1,14 @@
 // load the data from data.js to use here (const=data[...])
-var tableData = data;
+const tableData = data;
 
 //see the datain console
-console.log(data);
+// console.log(data);
 
 // get table references
 let tbody = d3.select("tbody");
 
 
-function buildTable(data) {
+function buildTable(data){
   // First, clear out any existing data
   tbody.html("");
 
@@ -49,20 +49,18 @@ function updateFilters() {
 
   // 4b. Save the value that was changed as a variable.
   let inputValue = inputElement.property('value')
+  // console.log(inputValue);
 
-  console.log(inputValue);
   // 4c. Save the id of the filter that was changed as a variable.
-
   let inputID = inputElement.attr("id")
-  console.log(inputID);
+  // console.log(inputID);
+  
   // 5. If a filter valsue was entered then add that filterId and value
   // to the filters list. Otherwise, clear that filter from the filters object.
   inputValue ? filters[inputID] = inputValue : filters = {} ;
 
   // 6. Call function to apply all filters and rebuild the table
   filterTable(filters);
-
-
 
 }
 
