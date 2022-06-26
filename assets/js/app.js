@@ -29,19 +29,19 @@ function buildTable(data){
 
 
 //clear input from form after "filter table" button has been hit 
-const clearInput = () => {
-  const dateInputVal = document.getElementById('datetime');
-  const cityInputVal = document.getElementById('city');
-  const stateInputVal = document.getElementById('state');
-  const countryInputVal = document.getElementById('country');
-  const shapeInputVal = document.getElementById('shape');
+// const clearInput = () => {
+//   const dateInputVal = document.getElementById('datetime');
+//   const cityInputVal = document.getElementById('city');
+//   const stateInputVal = document.getElementById('state');
+//   const countryInputVal = document.getElementById('country');
+//   const shapeInputVal = document.getElementById('shape');
 
-  dateInputVal.value = '';
-  cityInputVal.value = '';
-  stateInputVal.value = '';
-  countryInputVal.value = '';
-  shapeInputVal.value = '';
-}
+//   dateInputVal.value = '';
+//   cityInputVal.value = '';
+//   stateInputVal.value = '';
+//   countryInputVal.value = '';
+//   shapeInputVal.value = '';
+// }
 
 
 
