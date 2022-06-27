@@ -57,7 +57,7 @@ function updateFilters() {
   console.log(inputElement);
 
   // 4b. Save the value that was changed as a variable.
-  let inputValue = inputElement.property('value')
+  let inputValue = inputElement.property('value').toLowerCase()
   // console.log(inputValue);
 
   // 4c. Save the id of the filter that was changed as a variable.
