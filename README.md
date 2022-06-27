@@ -7,7 +7,6 @@ The goal of this project is to create a site that allows users to interact with 
 This HTML site used javascript and bootstrap as the main components for formatting and dynamic interaction.
 
 Site: https://jjcode-databootcamp.github.io/UFOs/
-![site](assets/images/site.png)
 
 
 ## Results
